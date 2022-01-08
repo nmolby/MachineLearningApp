@@ -21,25 +21,29 @@ class SnakeNode {
         self.gridSquare = gridSquare
     }
     
-    func Move(direction: Direction) {
+    func Move(direction: Direction) -> Bool {
         if(gridSquare.snakeNode === self) {
             gridSquare.snakeNode = nil
         }
         
         if(isStartOfSnake) {
-            var nextSquare = snake?.FindNextSquare(gridSquare: gridSquare, direction: direction)
+            let nextSquare = snake?.FindNextSquare(gridSquare: gridSquare, direction: direction)
             if let nextSquare = nextSquare {
                 gridSquare = nextSquare
                 gridSquare.snakeNode = self
+                let treatFound = nextSquare.hasTreat
+                nextSquare.hasTreat = false
+                return treatFound
             } else {
                 snake!.Lose()
+                return false
             }
         }
         else {
 
             gridSquare = parentNode!.gridSquare
             gridSquare.snakeNode = self
-            parentNode!.Move(direction: direction)
+            return parentNode!.Move(direction: direction)
         }
     }
     

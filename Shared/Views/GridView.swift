@@ -20,6 +20,5 @@ struct GridView: View {
                 }
             }
         }
-
     }
 }

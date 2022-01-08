@@ -13,8 +13,12 @@ struct GridSquareView: View {
     var body: some View {
         if gridSquare.snakeNode != nil {
             Image(systemName: "square.fill")
+        } else if gridSquare.hasTreat {
+            Image(systemName: "square.fill")
+                .foregroundColor(Color.green)
         } else {
             Image(systemName: "square")
+
         }
     }
 }

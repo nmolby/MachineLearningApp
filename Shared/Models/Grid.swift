@@ -22,4 +22,8 @@ class Grid: ObservableObject {
             gridRows.append(GridRow(width: width, index: i))
         }
     }
+    
+    func SetTreat() {
+        gridRows.map({$0.gridSquares}).flatMap({$0}).filter({!$0.hasTreat && $0.snakeNode == nil}).randomElement()?.hasTreat = true
+    }
 }

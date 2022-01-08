@@ -21,7 +21,14 @@ class Snake {
     }
     
     func Move(direction: Direction) {
-        tailSnakeNode.Move(direction: direction)
+        let tailSnakeSquare = tailSnakeNode.gridSquare
+        let treatFound = tailSnakeNode.Move(direction: direction)
+        if treatFound {
+            let newNode = SnakeNode(gridSquare: tailSnakeSquare, parentNode: tailSnakeNode)
+            tailSnakeSquare.snakeNode = newNode
+            tailSnakeNode = newNode
+            grid.SetTreat()
+        }
     }
     
     func Lose() {

@@ -16,7 +16,7 @@ struct ContentView: View {
         animation: .default)
     private var items: FetchedResults<Item>
 
-    @StateObject var gameState = GameState(gridWidth: 20, gridHeight: 40)
+    @StateObject var gameState = GameState(gridWidth: 10, gridHeight: 10)
     @State var direction = Direction.East
     @State var timer: Timer?
     

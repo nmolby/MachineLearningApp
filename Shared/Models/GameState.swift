@@ -16,7 +16,7 @@ class GameState: ObservableObject {
         let grid = Grid(height: gridHeight, width: gridWidth)
         snake = Snake(grid: grid)
         self.grid = grid
-
+        grid.SetTreat()
     }
     
     func Move(direction: Direction) {
