@@ -21,6 +21,26 @@
 		1184F1F7278A3BB000953E7E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F1C9278A3BAB00953E7E /* Persistence.swift */; };
 		1184F1F8278A3BB000953E7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1184F1CA278A3BB000953E7E /* Assets.xcassets */; };
 		1184F1F9278A3BB000953E7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1184F1CA278A3BB000953E7E /* Assets.xcassets */; };
+		1184F209278A3DCF00953E7E /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F208278A3DCF00953E7E /* GridView.swift */; };
+		1184F20A278A3DCF00953E7E /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F208278A3DCF00953E7E /* GridView.swift */; };
+		1184F20E278A3ED800953E7E /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F20D278A3ED800953E7E /* Snake.swift */; };
+		1184F20F278A3ED800953E7E /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F20D278A3ED800953E7E /* Snake.swift */; };
+		1184F211278A3F0E00953E7E /* SnakeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F210278A3F0E00953E7E /* SnakeNode.swift */; };
+		1184F212278A3F0E00953E7E /* SnakeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F210278A3F0E00953E7E /* SnakeNode.swift */; };
+		1184F217278A40B300953E7E /* GridSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F216278A40B300953E7E /* GridSquareView.swift */; };
+		1184F218278A40B300953E7E /* GridSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F216278A40B300953E7E /* GridSquareView.swift */; };
+		1184F21A278A421C00953E7E /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F219278A421C00953E7E /* Grid.swift */; };
+		1184F21B278A421C00953E7E /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F219278A421C00953E7E /* Grid.swift */; };
+		1184F21D278A425D00953E7E /* GridSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F21C278A425D00953E7E /* GridSquare.swift */; };
+		1184F21E278A425D00953E7E /* GridSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F21C278A425D00953E7E /* GridSquare.swift */; };
+		1184F220278A43AF00953E7E /* GridRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F21F278A43AF00953E7E /* GridRow.swift */; };
+		1184F221278A43AF00953E7E /* GridRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F21F278A43AF00953E7E /* GridRow.swift */; };
+		1184F223278A45C700953E7E /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F222278A45C700953E7E /* Direction.swift */; };
+		1184F224278A45C700953E7E /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F222278A45C700953E7E /* Direction.swift */; };
+		1184F226278A4A8100953E7E /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F225278A4A8100953E7E /* GameState.swift */; };
+		1184F227278A4A8100953E7E /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F225278A4A8100953E7E /* GameState.swift */; };
+		1184F229278A4F1B00953E7E /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F228278A4F1B00953E7E /* ControlView.swift */; };
+		1184F22A278A4F1B00953E7E /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F228278A4F1B00953E7E /* ControlView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +75,16 @@
 		1184F1E8278A3BB000953E7E /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1184F1EC278A3BB000953E7E /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		1184F1EE278A3BB000953E7E /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		1184F208278A3DCF00953E7E /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		1184F20D278A3ED800953E7E /* Snake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
+		1184F210278A3F0E00953E7E /* SnakeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeNode.swift; sourceTree = "<group>"; };
+		1184F216278A40B300953E7E /* GridSquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridSquareView.swift; sourceTree = "<group>"; };
+		1184F219278A421C00953E7E /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		1184F21C278A425D00953E7E /* GridSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridSquare.swift; sourceTree = "<group>"; };
+		1184F21F278A43AF00953E7E /* GridRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridRow.swift; sourceTree = "<group>"; };
+		1184F222278A45C700953E7E /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		1184F225278A4A8100953E7E /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		1184F228278A4F1B00953E7E /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +133,8 @@
 		1184F1C4278A3BAB00953E7E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				1184F1C7278A3BAB00953E7E /* MachineLearningApp.swift */,
-				1184F1C8278A3BAB00953E7E /* ContentView.swift */,
+				1184F20C278A3EC600953E7E /* Models */,
+				1184F20B278A3EBF00953E7E /* Views */,
 				1184F1C9278A3BAB00953E7E /* Persistence.swift */,
 				1184F1CA278A3BB000953E7E /* Assets.xcassets */,
 				1184F1C5278A3BAB00953E7E /* MachineLearning.xcdatamodeld */,
@@ -147,6 +177,32 @@
 				1184F1EE278A3BB000953E7E /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		1184F20B278A3EBF00953E7E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1184F1C7278A3BAB00953E7E /* MachineLearningApp.swift */,
+				1184F1C8278A3BAB00953E7E /* ContentView.swift */,
+				1184F208278A3DCF00953E7E /* GridView.swift */,
+				1184F216278A40B300953E7E /* GridSquareView.swift */,
+				1184F228278A4F1B00953E7E /* ControlView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1184F20C278A3EC600953E7E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1184F20D278A3ED800953E7E /* Snake.swift */,
+				1184F210278A3F0E00953E7E /* SnakeNode.swift */,
+				1184F219278A421C00953E7E /* Grid.swift */,
+				1184F21C278A425D00953E7E /* GridSquare.swift */,
+				1184F21F278A43AF00953E7E /* GridRow.swift */,
+				1184F222278A45C700953E7E /* Direction.swift */,
+				1184F225278A4A8100953E7E /* GameState.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,10 +363,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1184F209278A3DCF00953E7E /* GridView.swift in Sources */,
+				1184F217278A40B300953E7E /* GridSquareView.swift in Sources */,
+				1184F226278A4A8100953E7E /* GameState.swift in Sources */,
 				1184F1F0278A3BB000953E7E /* MachineLearning.xcdatamodeld in Sources */,
+				1184F20E278A3ED800953E7E /* Snake.swift in Sources */,
+				1184F21D278A425D00953E7E /* GridSquare.swift in Sources */,
 				1184F1F6278A3BB000953E7E /* Persistence.swift in Sources */,
 				1184F1F2278A3BB000953E7E /* MachineLearningApp.swift in Sources */,
+				1184F220278A43AF00953E7E /* GridRow.swift in Sources */,
+				1184F211278A3F0E00953E7E /* SnakeNode.swift in Sources */,
 				1184F1F4278A3BB000953E7E /* ContentView.swift in Sources */,
+				1184F21A278A421C00953E7E /* Grid.swift in Sources */,
+				1184F229278A4F1B00953E7E /* ControlView.swift in Sources */,
+				1184F223278A45C700953E7E /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,10 +384,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1184F20A278A3DCF00953E7E /* GridView.swift in Sources */,
+				1184F218278A40B300953E7E /* GridSquareView.swift in Sources */,
+				1184F227278A4A8100953E7E /* GameState.swift in Sources */,
 				1184F1F1278A3BB000953E7E /* MachineLearning.xcdatamodeld in Sources */,
+				1184F20F278A3ED800953E7E /* Snake.swift in Sources */,
+				1184F21E278A425D00953E7E /* GridSquare.swift in Sources */,
 				1184F1F7278A3BB000953E7E /* Persistence.swift in Sources */,
 				1184F1F3278A3BB000953E7E /* MachineLearningApp.swift in Sources */,
+				1184F221278A43AF00953E7E /* GridRow.swift in Sources */,
+				1184F212278A3F0E00953E7E /* SnakeNode.swift in Sources */,
 				1184F1F5278A3BB000953E7E /* ContentView.swift in Sources */,
+				1184F21B278A421C00953E7E /* Grid.swift in Sources */,
+				1184F22A278A4F1B00953E7E /* ControlView.swift in Sources */,
+				1184F224278A45C700953E7E /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
