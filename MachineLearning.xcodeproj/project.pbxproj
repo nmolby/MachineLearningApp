@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1163C8FC27C5F5B000872712 /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C8FB27C5F5B000872712 /* Dataset.swift */; };
+		1163C90427C5F5D900872712 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C8FD27C5F5D900872712 /* Cache.swift */; };
+		1163C90527C5F5D900872712 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C8FD27C5F5D900872712 /* Cache.swift */; };
+		1163C90627C5F5D900872712 /* Activation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C8FE27C5F5D900872712 /* Activation.swift */; };
+		1163C90727C5F5D900872712 /* Activation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C8FE27C5F5D900872712 /* Activation.swift */; };
+		1163C90827C5F5D900872712 /* NeuralNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C8FF27C5F5D900872712 /* NeuralNet.swift */; };
+		1163C90927C5F5D900872712 /* NeuralNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C8FF27C5F5D900872712 /* NeuralNet.swift */; };
+		1163C90A27C5F5D900872712 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C90027C5F5D900872712 /* Error.swift */; };
+		1163C90B27C5F5D900872712 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C90027C5F5D900872712 /* Error.swift */; };
+		1163C90C27C5F5D900872712 /* Structure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C90127C5F5D900872712 /* Structure.swift */; };
+		1163C90D27C5F5D900872712 /* Structure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C90127C5F5D900872712 /* Structure.swift */; };
+		1163C90E27C5F5D900872712 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C90227C5F5D900872712 /* Storage.swift */; };
+		1163C90F27C5F5D900872712 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C90227C5F5D900872712 /* Storage.swift */; };
+		1163C91527C5F61100872712 /* DQN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C91427C5F61100872712 /* DQN.swift */; };
+		1163C91627C5F61100872712 /* DQN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C91427C5F61100872712 /* DQN.swift */; };
+		1163C91827C5F64000872712 /* SnakeReinforcementLearning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C91727C5F64000872712 /* SnakeReinforcementLearning.swift */; };
+		1163C91927C5F64000872712 /* SnakeReinforcementLearning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C91727C5F64000872712 /* SnakeReinforcementLearning.swift */; };
 		1184F1E1278A3BB000953E7E /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F1E0278A3BB000953E7E /* Tests_iOS.swift */; };
 		1184F1E3278A3BB000953E7E /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F1E2278A3BB000953E7E /* Tests_iOSLaunchTests.swift */; };
 		1184F1ED278A3BB000953E7E /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F1EC278A3BB000953E7E /* Tests_macOS.swift */; };
@@ -23,8 +40,8 @@
 		1184F1F9278A3BB000953E7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1184F1CA278A3BB000953E7E /* Assets.xcassets */; };
 		1184F209278A3DCF00953E7E /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F208278A3DCF00953E7E /* GridView.swift */; };
 		1184F20A278A3DCF00953E7E /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F208278A3DCF00953E7E /* GridView.swift */; };
-		1184F20E278A3ED800953E7E /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F20D278A3ED800953E7E /* Snake.swift */; };
-		1184F20F278A3ED800953E7E /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F20D278A3ED800953E7E /* Snake.swift */; };
+		1184F20E278A3ED800953E7E /* SnakeEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F20D278A3ED800953E7E /* SnakeEnvironment.swift */; };
+		1184F20F278A3ED800953E7E /* SnakeEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F20D278A3ED800953E7E /* SnakeEnvironment.swift */; };
 		1184F217278A40B300953E7E /* GridSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F216278A40B300953E7E /* GridSquareView.swift */; };
 		1184F218278A40B300953E7E /* GridSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F216278A40B300953E7E /* GridSquareView.swift */; };
 		1184F223278A45C700953E7E /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F222278A45C700953E7E /* Direction.swift */; };
@@ -51,6 +68,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1163C8FB27C5F5B000872712 /* Dataset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dataset.swift; sourceTree = "<group>"; };
+		1163C8FD27C5F5D900872712 /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		1163C8FE27C5F5D900872712 /* Activation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activation.swift; sourceTree = "<group>"; };
+		1163C8FF27C5F5D900872712 /* NeuralNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeuralNet.swift; sourceTree = "<group>"; };
+		1163C90027C5F5D900872712 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		1163C90127C5F5D900872712 /* Structure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Structure.swift; sourceTree = "<group>"; };
+		1163C90227C5F5D900872712 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		1163C91427C5F61100872712 /* DQN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DQN.swift; sourceTree = "<group>"; };
+		1163C91727C5F64000872712 /* SnakeReinforcementLearning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeReinforcementLearning.swift; sourceTree = "<group>"; };
 		1184F1C6278A3BAB00953E7E /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		1184F1C7278A3BAB00953E7E /* MachineLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineLearningApp.swift; sourceTree = "<group>"; };
 		1184F1C8278A3BAB00953E7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,7 +92,7 @@
 		1184F1EC278A3BB000953E7E /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		1184F1EE278A3BB000953E7E /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		1184F208278A3DCF00953E7E /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
-		1184F20D278A3ED800953E7E /* Snake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
+		1184F20D278A3ED800953E7E /* SnakeEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeEnvironment.swift; sourceTree = "<group>"; };
 		1184F216278A40B300953E7E /* GridSquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridSquareView.swift; sourceTree = "<group>"; };
 		1184F222278A45C700953E7E /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		1184F228278A4F1B00953E7E /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
@@ -104,6 +130,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1163C8FA27C5F5A800872712 /* NeuralNet */ = {
+			isa = PBXGroup;
+			children = (
+				1163C8FE27C5F5D900872712 /* Activation.swift */,
+				1163C8FD27C5F5D900872712 /* Cache.swift */,
+				1163C90027C5F5D900872712 /* Error.swift */,
+				1163C8FF27C5F5D900872712 /* NeuralNet.swift */,
+				1163C90227C5F5D900872712 /* Storage.swift */,
+				1163C90127C5F5D900872712 /* Structure.swift */,
+				1163C8FB27C5F5B000872712 /* Dataset.swift */,
+			);
+			path = NeuralNet;
+			sourceTree = "<group>";
+		};
 		1184F1BF278A3BAA00953E7E = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +158,7 @@
 		1184F1C4278A3BAB00953E7E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				1163C8FA27C5F5A800872712 /* NeuralNet */,
 				1184F20C278A3EC600953E7E /* Models */,
 				1184F20B278A3EBF00953E7E /* Views */,
 				1184F1C9278A3BAB00953E7E /* Persistence.swift */,
@@ -179,8 +220,10 @@
 		1184F20C278A3EC600953E7E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1184F20D278A3ED800953E7E /* Snake.swift */,
+				1184F20D278A3ED800953E7E /* SnakeEnvironment.swift */,
 				1184F222278A45C700953E7E /* Direction.swift */,
+				1163C91427C5F61100872712 /* DQN.swift */,
+				1163C91727C5F64000872712 /* SnakeReinforcementLearning.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -344,13 +387,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				1184F209278A3DCF00953E7E /* GridView.swift in Sources */,
+				1163C90627C5F5D900872712 /* Activation.swift in Sources */,
+				1163C90C27C5F5D900872712 /* Structure.swift in Sources */,
 				1184F217278A40B300953E7E /* GridSquareView.swift in Sources */,
+				1163C91827C5F64000872712 /* SnakeReinforcementLearning.swift in Sources */,
 				1184F1F0278A3BB000953E7E /* MachineLearning.xcdatamodeld in Sources */,
-				1184F20E278A3ED800953E7E /* Snake.swift in Sources */,
+				1184F20E278A3ED800953E7E /* SnakeEnvironment.swift in Sources */,
+				1163C90427C5F5D900872712 /* Cache.swift in Sources */,
 				1184F1F6278A3BB000953E7E /* Persistence.swift in Sources */,
 				1184F1F2278A3BB000953E7E /* MachineLearningApp.swift in Sources */,
+				1163C8FC27C5F5B000872712 /* Dataset.swift in Sources */,
+				1163C91527C5F61100872712 /* DQN.swift in Sources */,
 				1184F1F4278A3BB000953E7E /* ContentView.swift in Sources */,
+				1163C90827C5F5D900872712 /* NeuralNet.swift in Sources */,
 				1184F229278A4F1B00953E7E /* ControlView.swift in Sources */,
+				1163C90E27C5F5D900872712 /* Storage.swift in Sources */,
+				1163C90A27C5F5D900872712 /* Error.swift in Sources */,
 				1184F223278A45C700953E7E /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,12 +414,20 @@
 				1184F20A278A3DCF00953E7E /* GridView.swift in Sources */,
 				1184F218278A40B300953E7E /* GridSquareView.swift in Sources */,
 				1184F1F1278A3BB000953E7E /* MachineLearning.xcdatamodeld in Sources */,
-				1184F20F278A3ED800953E7E /* Snake.swift in Sources */,
+				1163C90B27C5F5D900872712 /* Error.swift in Sources */,
+				1184F20F278A3ED800953E7E /* SnakeEnvironment.swift in Sources */,
+				1163C90D27C5F5D900872712 /* Structure.swift in Sources */,
 				1184F1F7278A3BB000953E7E /* Persistence.swift in Sources */,
+				1163C91627C5F61100872712 /* DQN.swift in Sources */,
 				1184F1F3278A3BB000953E7E /* MachineLearningApp.swift in Sources */,
+				1163C90527C5F5D900872712 /* Cache.swift in Sources */,
 				1184F1F5278A3BB000953E7E /* ContentView.swift in Sources */,
+				1163C90927C5F5D900872712 /* NeuralNet.swift in Sources */,
 				1184F22A278A4F1B00953E7E /* ControlView.swift in Sources */,
+				1163C90727C5F5D900872712 /* Activation.swift in Sources */,
 				1184F224278A45C700953E7E /* Direction.swift in Sources */,
+				1163C91927C5F64000872712 /* SnakeReinforcementLearning.swift in Sources */,
+				1163C90F27C5F5D900872712 /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,9 +16,10 @@ struct ContentView: View {
         animation: .default)
     private var items: FetchedResults<Item>
 
-    @State var snake = Snake(gridHeight: 10, gridWidth: 10)
+    @StateObject var snake = SnakeEnvironment(gridHeight: 10, gridWidth: 10)
     @State var direction = Direction.East
     @State var timer: Timer?
+    @State var snakeReinforcementlearning: SnakeReinforcementLearning = SnakeReinforcementLearning()
     
     var body: some View {
         VStack {
@@ -26,10 +27,16 @@ struct ContentView: View {
             ControlView(direction: $direction)
         }.onAppear() {
             self.timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { _ in
-                snake.Move(direction: direction)
+                let recommendedMove = snakeReinforcementlearning.agent.act(state: snake.getState())
+                
+                snake.Move(direction: Direction(rawValue: recommendedMove)!)
              })
         }
         .environmentObject(snake)
+    }
+    
+    init() {
+        snakeReinforcementlearning.Learn()
     }
 }
 

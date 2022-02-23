@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct GridSquareView: View {
-    @EnvironmentObject var snake: Snake
+    @EnvironmentObject var snake: SnakeEnvironment
     var location: (x: Int, y: Int)
     
     var body: some View {
-        if snake.snake.contains(where: {$0 == location}) {
+        if snake.snake.count > 0 && snake.snake[0] == location {
+            Image(systemName: "square.fill")
+                .foregroundColor(Color.red)
+        }
+        else if snake.snake.count > 0 && snake.snake.contains(where: {$0 == location}) {
             Image(systemName: "square.fill")
         } else if snake.treatLocation == location {
             Image(systemName: "square.fill")
