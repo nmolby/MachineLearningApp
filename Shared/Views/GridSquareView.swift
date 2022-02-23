@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct GridSquareView: View {
-    @ObservedObject var gridSquare: GridSquare
+    @EnvironmentObject var snake: Snake
+    var location: (x: Int, y: Int)
     
     var body: some View {
-        if gridSquare.snakeNode != nil {
+        if snake.snake.contains(where: {$0 == location}) {
             Image(systemName: "square.fill")
-        } else if gridSquare.hasTreat {
+        } else if snake.treatLocation == location {
             Image(systemName: "square.fill")
                 .foregroundColor(Color.green)
         } else {

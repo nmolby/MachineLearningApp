@@ -7,60 +7,64 @@
 
 import Foundation
 
-class Snake {
-    var grid: Grid
-    var tailSnakeNode: SnakeNode
+class Snake: ObservableObject {
+    var gridHeight: Int
+    var gridWidth: Int
+    @Published var snake: [(x: Int, y: Int)] = []
+    @Published var done: Bool = false
+    @Published var treatLocation: (x: Int, y: Int) = (0, 0)
     
-    init(grid: Grid) {
-        self.grid = grid
-        let targetGridSquare = grid.gridRows[grid.height / 2].gridSquares[grid.width / 2]
+    init(gridHeight: Int, gridWidth: Int) {
+        self.gridHeight = gridHeight
+        self.gridWidth = gridWidth
         
-        tailSnakeNode = SnakeNode(gridSquare: targetGridSquare, parentNode: nil)
-        targetGridSquare.snakeNode = tailSnakeNode
-        tailSnakeNode.snake = self
+        let targetGridSquare = (gridWidth / 2, gridHeight / 2)
+        snake.append(targetGridSquare)
+        SetTreatLocation()
+    }
+    
+    func SetTreatLocation() {
+        var treatX = Int.random(in: 0..<gridWidth)
+        var treatY = Int.random(in: 0..<gridHeight)
+        treatLocation = (treatX, treatY)
+        
+        while snake.contains(where: {$0 == treatLocation}) {
+            treatX = Int.random(in: 0..<gridWidth)
+            treatY = Int.random(in: 0..<gridHeight)
+            treatLocation = (treatX, treatY)
+        }
     }
     
     func Move(direction: Direction) {
-        let tailSnakeSquare = tailSnakeNode.gridSquare
-        let treatFound = tailSnakeNode.Move(direction: direction)
-        if treatFound {
-            let newNode = SnakeNode(gridSquare: tailSnakeSquare, parentNode: tailSnakeNode)
-            tailSnakeSquare.snakeNode = newNode
-            tailSnakeNode = newNode
-            grid.SetTreat()
+        let head = snake[0]
+        var newNode: (x: Int, y: Int)
+        
+        switch(direction) {
+        case .North:
+            newNode = (head.x, head.y - 1)
+        case .East:
+            newNode = (head.x + 1, head.y)
+        case .South:
+            newNode = (head.x, head.y + 1)
+        case .West:
+            newNode = (head.x - 1, head.y)
+        }
+        
+        if newNode != treatLocation {
+            snake.removeLast()
+        }
+        //if the snake will enter an illegal position
+        if newNode.y < 0 || newNode.y >= gridHeight || newNode.x < 0 || newNode.x >= gridWidth || snake.contains(where: {$0 == newNode}) {
+            Lose()
+        }
+        snake.insert(newNode, at: 0)
+        
+        if newNode == treatLocation {
+            SetTreatLocation()
         }
     }
     
     func Lose() {
-        
-    }
-    
-    func FindNextSquare(gridSquare: GridSquare, direction: Direction) -> GridSquare? {
-        switch(direction) {
-        case Direction.North:
-            if(gridSquare.row.index == 0) {
-                return nil
-            } else {
-                return grid.gridRows[gridSquare.row.index - 1].gridSquares[gridSquare.index]
-            }
-        case Direction.South:
-            if(gridSquare.row.index == grid.height - 1) {
-                return nil
-            } else {
-                return grid.gridRows[gridSquare.row.index + 1].gridSquares[gridSquare.index]
-            }
-        case Direction.East:
-            if(gridSquare.index == grid.width - 1) {
-                return nil
-            } else {
-                return grid.gridRows[gridSquare.row.index].gridSquares[gridSquare.index + 1]
-            }
-        case Direction.West:
-            if(gridSquare.index == 0) {
-                return nil
-            } else {
-                return grid.gridRows[gridSquare.row.index].gridSquares[gridSquare.index - 1]
-            }
-        }
+        done = true
     }
 }

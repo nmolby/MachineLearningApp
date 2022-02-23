@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct GridView: View {
-    @ObservedObject var grid: Grid
+    var height: Int
+    var width: Int
     
     var body: some View {
         VStack {
-            ForEach(grid.gridRows) { gridRow in
+            ForEach(0..<height) { y in
                 HStack {
-                    ForEach(gridRow.gridSquares) { gridSquare in
-                        GridSquareView(gridSquare: gridSquare)
+                    ForEach(0..<width) { x in
+                        GridSquareView(location: (x, y))
                     }
                 }
             }

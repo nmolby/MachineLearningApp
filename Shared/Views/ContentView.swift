@@ -16,19 +16,20 @@ struct ContentView: View {
         animation: .default)
     private var items: FetchedResults<Item>
 
-    @StateObject var gameState = GameState(gridWidth: 10, gridHeight: 10)
+    @State var snake = Snake(gridHeight: 10, gridWidth: 10)
     @State var direction = Direction.East
     @State var timer: Timer?
     
     var body: some View {
         VStack {
-            GridView(grid: gameState.grid)
+            GridView(height: 10, width: 10)
             ControlView(direction: $direction)
         }.onAppear() {
             self.timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { _ in
-                gameState.Move(direction: direction)
+                snake.Move(direction: direction)
              })
         }
+        .environmentObject(snake)
     }
 }
 
