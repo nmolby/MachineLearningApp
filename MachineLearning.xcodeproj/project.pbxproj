@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1121730E27E0C99F00446169 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 1121730D27E0C99F00446169 /* Charts */; };
+		1121731027E0C9FD00446169 /* LineChartSwiftui.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1121730F27E0C9FD00446169 /* LineChartSwiftui.swift */; };
+		1121731127E0C9FD00446169 /* LineChartSwiftui.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1121730F27E0C9FD00446169 /* LineChartSwiftui.swift */; };
+		1144D8AE27D27332009DAC20 /* ConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1144D8AD27D27332009DAC20 /* ConfigurationView.swift */; };
+		1144D8AF27D27332009DAC20 /* ConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1144D8AD27D27332009DAC20 /* ConfigurationView.swift */; };
+		1144D8B127D27438009DAC20 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1144D8B027D27438009DAC20 /* Configuration.swift */; };
+		1144D8B227D27438009DAC20 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1144D8B027D27438009DAC20 /* Configuration.swift */; };
+		1144D8B427D27773009DAC20 /* GenericTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1144D8B327D27773009DAC20 /* GenericTextField.swift */; };
+		1144D8B527D27773009DAC20 /* GenericTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1144D8B327D27773009DAC20 /* GenericTextField.swift */; };
 		1163C8FC27C5F5B000872712 /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C8FB27C5F5B000872712 /* Dataset.swift */; };
 		1163C90427C5F5D900872712 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C8FD27C5F5D900872712 /* Cache.swift */; };
 		1163C90527C5F5D900872712 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C8FD27C5F5D900872712 /* Cache.swift */; };
@@ -24,6 +33,8 @@
 		1163C91627C5F61100872712 /* DQN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C91427C5F61100872712 /* DQN.swift */; };
 		1163C91827C5F64000872712 /* SnakeReinforcementLearning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C91727C5F64000872712 /* SnakeReinforcementLearning.swift */; };
 		1163C91927C5F64000872712 /* SnakeReinforcementLearning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C91727C5F64000872712 /* SnakeReinforcementLearning.swift */; };
+		1163D13227D3E8DA00DCBF4E /* ModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163D13127D3E8DA00DCBF4E /* ModelView.swift */; };
+		1163D13327D3E8DA00DCBF4E /* ModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163D13127D3E8DA00DCBF4E /* ModelView.swift */; };
 		1184F1E1278A3BB000953E7E /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F1E0278A3BB000953E7E /* Tests_iOS.swift */; };
 		1184F1E3278A3BB000953E7E /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F1E2278A3BB000953E7E /* Tests_iOSLaunchTests.swift */; };
 		1184F1ED278A3BB000953E7E /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184F1EC278A3BB000953E7E /* Tests_macOS.swift */; };
@@ -68,6 +79,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1121730F27E0C9FD00446169 /* LineChartSwiftui.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartSwiftui.swift; sourceTree = "<group>"; };
+		1144D8AD27D27332009DAC20 /* ConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationView.swift; sourceTree = "<group>"; };
+		1144D8B027D27438009DAC20 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		1144D8B327D27773009DAC20 /* GenericTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTextField.swift; sourceTree = "<group>"; };
 		1163C8FB27C5F5B000872712 /* Dataset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dataset.swift; sourceTree = "<group>"; };
 		1163C8FD27C5F5D900872712 /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		1163C8FE27C5F5D900872712 /* Activation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activation.swift; sourceTree = "<group>"; };
@@ -77,6 +92,7 @@
 		1163C90227C5F5D900872712 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		1163C91427C5F61100872712 /* DQN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DQN.swift; sourceTree = "<group>"; };
 		1163C91727C5F64000872712 /* SnakeReinforcementLearning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeReinforcementLearning.swift; sourceTree = "<group>"; };
+		1163D13127D3E8DA00DCBF4E /* ModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelView.swift; sourceTree = "<group>"; };
 		1184F1C6278A3BAB00953E7E /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		1184F1C7278A3BAB00953E7E /* MachineLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineLearningApp.swift; sourceTree = "<group>"; };
 		1184F1C8278A3BAB00953E7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1121730E27E0C99F00446169 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,11 +225,15 @@
 		1184F20B278A3EBF00953E7E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1121730F27E0C9FD00446169 /* LineChartSwiftui.swift */,
 				1184F1C7278A3BAB00953E7E /* MachineLearningApp.swift */,
 				1184F1C8278A3BAB00953E7E /* ContentView.swift */,
 				1184F208278A3DCF00953E7E /* GridView.swift */,
 				1184F216278A40B300953E7E /* GridSquareView.swift */,
 				1184F228278A4F1B00953E7E /* ControlView.swift */,
+				1144D8AD27D27332009DAC20 /* ConfigurationView.swift */,
+				1144D8B327D27773009DAC20 /* GenericTextField.swift */,
+				1163D13127D3E8DA00DCBF4E /* ModelView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,6 +245,7 @@
 				1184F222278A45C700953E7E /* Direction.swift */,
 				1163C91427C5F61100872712 /* DQN.swift */,
 				1163C91727C5F64000872712 /* SnakeReinforcementLearning.swift */,
+				1144D8B027D27438009DAC20 /* Configuration.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -244,6 +266,9 @@
 			dependencies = (
 			);
 			name = "MachineLearning (iOS)";
+			packageProductDependencies = (
+				1121730D27E0C99F00446169 /* Charts */,
+			);
 			productName = "MachineLearning (iOS)";
 			productReference = 1184F1CF278A3BB000953E7E /* MachineLearning.app */;
 			productType = "com.apple.product-type.application";
@@ -336,6 +361,9 @@
 				Base,
 			);
 			mainGroup = 1184F1BF278A3BAA00953E7E;
+			packageReferences = (
+				1121730C27E0C99F00446169 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 1184F1D0278A3BB000953E7E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -388,10 +416,13 @@
 			files = (
 				1184F209278A3DCF00953E7E /* GridView.swift in Sources */,
 				1163C90627C5F5D900872712 /* Activation.swift in Sources */,
+				1121731027E0C9FD00446169 /* LineChartSwiftui.swift in Sources */,
 				1163C90C27C5F5D900872712 /* Structure.swift in Sources */,
 				1184F217278A40B300953E7E /* GridSquareView.swift in Sources */,
 				1163C91827C5F64000872712 /* SnakeReinforcementLearning.swift in Sources */,
+				1144D8B427D27773009DAC20 /* GenericTextField.swift in Sources */,
 				1184F1F0278A3BB000953E7E /* MachineLearning.xcdatamodeld in Sources */,
+				1144D8B127D27438009DAC20 /* Configuration.swift in Sources */,
 				1184F20E278A3ED800953E7E /* SnakeEnvironment.swift in Sources */,
 				1163C90427C5F5D900872712 /* Cache.swift in Sources */,
 				1184F1F6278A3BB000953E7E /* Persistence.swift in Sources */,
@@ -400,8 +431,10 @@
 				1163C91527C5F61100872712 /* DQN.swift in Sources */,
 				1184F1F4278A3BB000953E7E /* ContentView.swift in Sources */,
 				1163C90827C5F5D900872712 /* NeuralNet.swift in Sources */,
+				1163D13227D3E8DA00DCBF4E /* ModelView.swift in Sources */,
 				1184F229278A4F1B00953E7E /* ControlView.swift in Sources */,
 				1163C90E27C5F5D900872712 /* Storage.swift in Sources */,
+				1144D8AE27D27332009DAC20 /* ConfigurationView.swift in Sources */,
 				1163C90A27C5F5D900872712 /* Error.swift in Sources */,
 				1184F223278A45C700953E7E /* Direction.swift in Sources */,
 			);
@@ -412,7 +445,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1184F20A278A3DCF00953E7E /* GridView.swift in Sources */,
+				1144D8AF27D27332009DAC20 /* ConfigurationView.swift in Sources */,
+				1121731127E0C9FD00446169 /* LineChartSwiftui.swift in Sources */,
+				1144D8B527D27773009DAC20 /* GenericTextField.swift in Sources */,
 				1184F218278A40B300953E7E /* GridSquareView.swift in Sources */,
+				1144D8B227D27438009DAC20 /* Configuration.swift in Sources */,
 				1184F1F1278A3BB000953E7E /* MachineLearning.xcdatamodeld in Sources */,
 				1163C90B27C5F5D900872712 /* Error.swift in Sources */,
 				1184F20F278A3ED800953E7E /* SnakeEnvironment.swift in Sources */,
@@ -420,6 +457,7 @@
 				1184F1F7278A3BB000953E7E /* Persistence.swift in Sources */,
 				1163C91627C5F61100872712 /* DQN.swift in Sources */,
 				1184F1F3278A3BB000953E7E /* MachineLearningApp.swift in Sources */,
+				1163D13327D3E8DA00DCBF4E /* ModelView.swift in Sources */,
 				1163C90527C5F5D900872712 /* Cache.swift in Sources */,
 				1184F1F5278A3BB000953E7E /* ContentView.swift in Sources */,
 				1163C90927C5F5D900872712 /* NeuralNet.swift in Sources */,
@@ -825,6 +863,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1121730C27E0C99F00446169 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1121730D27E0C99F00446169 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1121730C27E0C99F00446169 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		1184F1C5278A3BAB00953E7E /* MachineLearning.xcdatamodeld */ = {

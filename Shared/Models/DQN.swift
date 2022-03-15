@@ -10,21 +10,20 @@ import Foundation
 
 class DQN: ObservableObject {
     var memory: Array<(originalState: Array<Float>, action: Int, reward: Float, newState: Array<Float>, done: Int)> = []
-    var gamma: Float = 0.99
-    var epsilon: Float = 0.99
-    var epsilon_min: Float = 0.01
-    var epsilon_decay: Float = 0.999
+    var gamma: Float
+    var epsilon: Float
+    var epsilon_min: Float
+    var epsilon_decay: Float
     @Published public var model: NeuralNet
 
-    init() {
+    init(configuration: Configuration) {
         self.memory = []
-
-        self.gamma = 0.95
-        self.epsilon = 0.99
-        self.epsilon_min = 0.005
-        self.epsilon_decay = 0.995
+        gamma = configuration.gamma
+        epsilon = configuration.epsilon
+        epsilon_min = configuration.epsilon_min
+        epsilon_decay = configuration.epsilon_decay
         
-        let structure = try! NeuralNet.Structure(nodes: [8, 16, 4], hiddenActivation: .rectifiedLinear, outputActivation: .softmax, learningRate: 0.001, momentum: 0.99)
+        let structure = try! NeuralNet.Structure(nodes: [8, 64, 4], hiddenActivation: .rectifiedLinear, outputActivation: .softmax, learningRate: configuration.learningRate, momentum: configuration.momentum)
 
         self.model = try! NeuralNet(structure: structure)
     }
@@ -44,14 +43,14 @@ class DQN: ObservableObject {
 
 
     func remember(state: [Float], action: Int, reward: Float, new_state: [Float], done: Int) {
-        if memory.count > 1000 {
-            memory.removeSubrange(0..<100)
-        }
+//        if memory.count > 1000 {
+//            memory.removeSubrange(0..<100)
+//        }
         self.memory.append((state, action, reward, new_state, done))
     }
 
     func replay() {
-        let batch_size = 8
+        let batch_size = 32
         if self.memory.count < batch_size {
             return
         }

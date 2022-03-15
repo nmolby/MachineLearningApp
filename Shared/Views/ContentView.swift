@@ -16,27 +16,28 @@ struct ContentView: View {
         animation: .default)
     private var items: FetchedResults<Item>
 
-    @StateObject var snake = SnakeEnvironment(gridHeight: 10, gridWidth: 10)
     @State var direction = Direction.East
     @State var timer: Timer?
-    @State var snakeReinforcementlearning: SnakeReinforcementLearning = SnakeReinforcementLearning()
+    @State var snakeReinforcementlearning: SnakeReinforcementLearning?
+    @StateObject var configuration =  Configuration()
+    @State var tryingItOut: Bool = false
     
     var body: some View {
-        VStack {
-            GridView(height: 10, width: 10)
-            ControlView(direction: $direction)
-        }.onAppear() {
-            self.timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { _ in
-                let recommendedMove = snakeReinforcementlearning.agent.act(state: snake.getState())
-                
-                snake.Move(direction: Direction(rawValue: recommendedMove)!)
-             })
+        NavigationView {
+            VStack {
+                NavigationLink(isActive: $tryingItOut, destination: { ModelView(snakeReinforcementlearning: $snakeReinforcementlearning) }, label: { EmptyView() })
+                ConfigurationView(configuration: self.configuration)
+                Button("Try it out!") {
+                    snakeReinforcementlearning = SnakeReinforcementLearning(configuration: configuration)
+                    tryingItOut = true
+                }
+            }
+            
         }
-        .environmentObject(snake)
     }
     
     init() {
-        snakeReinforcementlearning.Learn()
+        //snakeReinforcementlearning.Learn()
     }
 }
 
